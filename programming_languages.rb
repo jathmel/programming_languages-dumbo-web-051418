@@ -8,9 +8,9 @@ def reformat_languages(languages)
     
 end
 
-def language(langauges)
+def language(hash)
   new_hash = Hash.new { |hash, key| hash[key] = Hash.new(){[]} }
-  languages.each_pair do |style, lang|
+  hash.each_pair do |style, lang|
     lang.each_pair do |key, val|
       new_hash[key][:style] << style
     end

@@ -5,7 +5,7 @@ def reformat_languages(languages)
 end
 
 def language(data)
-  new_hash = {}{}
+  new_hash = Hash.new { |hash, key| hash[key] = {} }
   data.each_pair do |style, lang|
     lang.each_pair do |key, val|
       new_hash[key] = [style]

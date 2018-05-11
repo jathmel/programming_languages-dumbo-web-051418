@@ -9,10 +9,10 @@ def reformat_languages(languages)
 end
 
 def language(hash)
-  new_hash = Hash.new { |hash, key| hash[key] = {} }
+  new_hash = {}Hash.new { |hash, key| hash[key] = {} }
   hash.each_pair do |style, lang|
     lang.each_pair do |key, val|
-      new_hash[key]
+      new_hash[key] ={}
     end
   end
   new_hash

@@ -18,18 +18,6 @@ def language(langauges)
   new_hash
 end
 
-def style(languages)
-  new_hash = language(languages)
-  new_hash.each do |el|
-    languages.each do |style, data|
-      data.each do |key, val|
-        new_hash[el][key] = val
-      end
-    end
-  end
-  new_hash
-end
-
 
 
 

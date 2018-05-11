@@ -10,7 +10,7 @@ end
 
 def language(langauges)
   new_hash = Hash.new { |hash, key| hash[key] = Hash.new(){[]} }
-  data.each_pair do |style, lang|
+  languages.each_pair do |style, lang|
     lang.each_pair do |key, val|
       new_hash[key][:style] << style
     end

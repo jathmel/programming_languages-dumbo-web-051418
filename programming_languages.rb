@@ -18,6 +18,11 @@ def language(langauges)
   new_hash
 end
 
+def style(langauges)
+  new_hash = language(languages)
+  lan
+end
+
 
 
 

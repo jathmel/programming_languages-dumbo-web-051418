@@ -12,7 +12,7 @@ def language(hash)
   new_hash = Hash.new { |hash, key| hash[key] = Hash.new(){[]} }
   hash.each_pair do |style, lang|
     lang.each_pair do |key, val|
-      new_hash[key][:style] << style
+      new_hash[key]
     end
   end
   new_hash

@@ -18,7 +18,7 @@ def language(langauges)
   new_hash
 end
 
-def style(langauges)
+def style(languages)
   new_hash = language(languages)
   new_hash.each do |el|
     languages.each do |style, data|
